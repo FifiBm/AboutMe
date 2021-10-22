@@ -1,0 +1,162 @@
+/* RESETS */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1601836555327-7c654cce6b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=664&q=80" );
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+/* GLOBAL STYLES */
+
+
+
+/* PAGE LAYOUT - MAIN */
+h1{
+  
+    color:rgb(37, 5, 5);
+
+}
+h1:hover{color:darkred;}
+
+p{
+    font-size-adjust: 1.5em;
+}
+
+
+img{
+    width: 100%;
+    margin-block-start: 5cm;
+}
+a{
+    display:block;
+    width:100%;
+    padding:25px;
+    background-color: darkorchid;
+    box-sizing: border-box;
+    text-align: center;
+    color: darkred;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: darkblue;
+    color: darkorchid;
+}
+
+
+/* i am working*/
+
+#work{
+
+    width:95%;
+    margin:auto;
+    border: 10px solid rgb(20, 5, 5);
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    z-index: 2;
+}
+#text{
+    padding: 50px;
+}
+#work div.list{
+    border:2px solid black;
+    display: inline-block;
+    width:40%;
+    background-color: white;
+}
+
+#work div.list h3{
+    background-color: blueviolet;
+    color: cornflowerblue;
+    padding: 10px;
+}
+
+#work div.list li{
+ margin-bottom: 20px;
+}
+
+#work div.list li:last-child{
+    font-weight: bold;
+}
+    
+
+
+body {
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#page {
+    background-color:rgb(107, 48, 48);
+    width:100%;
+    height:100%;
+    max-width:900px;
+    margin:auto;
+}
+
+footer {
+    background-color:#333;
+    position: absolute;
+    bottom: -100%;
+    width: 100%
+
+}
+/* NAVIGATION STYLES */
+
+nav {
+    background-color:#333;
+}
+
+nav #main-nav ul {
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav #main-nav a {
+    display: block;
+    padding: 20px 30px;
+    color: white;
+    text-decoration: black;
+    font-weight:700;
+    transition: all 0.5s;
+}
+
+nav #main-nav a:hover {
+    background-color:white;
+    color:#333;
+}
+
+nav #main-nav li.active a {
+    background-color: #ddd;
+    color:rgb(90, 65, 65);
+}
